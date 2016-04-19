@@ -47,10 +47,11 @@ fig=plt.figure(figsize=(20,10))
 
 for j in range(6):
     ax=fig.add_subplot(3,2,j+1)
-    temp3=len(w.wsi(product[0],"close",start+hourstart,\
+    temp3=len(w.wsi(product[j],"close",start+hourstart,\
               end+hourend).Times)
     data=pd.DataFrame(np.zeros((temp3,2)))
     for i in range(2):
+        
         temp=w.wsi(product[2*(j)+i],"close",start+hourstart,\
               end+hourend)
         temp2=np.array(temp.Data).T
