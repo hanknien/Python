@@ -62,4 +62,5 @@ for j in range(6):
     
     ax.plot(diff)
     ax.set_xticks([0,60,120,180,240,300,360,420,480])
-    ax.set_title("%s %s-%s Sprd[%s/%s]"%(start.date(),product[2*(j)],product[2*j+1],diff.quantile(0.05),diff.quantile(0.95)))
+    
+    ax.set_title("%s %s-%s Sprd[%s/%s]"%(end.date(),product[2*(j)],product[2*j+1],diff.quantile(0.05),diff.quantile(0.95)))

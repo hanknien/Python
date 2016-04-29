@@ -58,4 +58,4 @@ for j in range(3):
     ax.plot(diff)
     ax.set_xticks([0,60,120,180,240])
     ax.set_yticklabels(['%.2f'%m for m in ax.get_yticks().tolist()]) 
-    ax.set_title("%s %s-%s Sprd"%(date.today(),product[2*(j)],product[2*j+1]))
+    ax.set_title("%s %s-%s Sprd"%(end.date(),product[2*(j)],product[2*j+1]))
